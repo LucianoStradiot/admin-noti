@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="handleFilterDialogConfirm" resetFilters="onResetFilter">
+		<filterItems>
+            <ViewSettingsFilterItem text="{i18n>FUNCTIONALITY}" key="FUNCTIONALITY" multiSelect="false" items="{oModelFilter1>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter1>key}" key="{oModelFilter1>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+
+            <ViewSettingsFilterItem text="{i18n>SENDMAILFLAG}" key="SENDMAILFLAG" multiSelect="false" items="{oModelFilter2>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter2>text}" key="{oModelFilter2>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+
+            <ViewSettingsFilterItem text="{i18n>SENDPORTALFLAG}" key="SENDPORTALFLAG" multiSelect="false" items="{oModelFilter3>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter3>text}" key="{oModelFilter3>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+
+            <ViewSettingsFilterItem text="{i18n>SENDORIGIN}" key="SENDORIGIN" multiSelect="false" items="{oModelFilter4>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter4>key}" key="{oModelFilter4>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+
+			<ViewSettingsFilterItem text="{i18n>estado}" key="DELETESTATUS" multiSelect="false" items="{oModelFilter5>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter5>key}" key="{oModelFilter5>key}"/>
+				</items>
+			</ViewSettingsFilterItem>			
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>	
